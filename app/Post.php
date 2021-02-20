@@ -38,9 +38,9 @@ class Post extends Model
         return substr($this->body, 0, 140);
     }
 
-    public function getGetImagenAttribute()
+    public function getGetImageAttribute()
     {
         if ($this->image) 
-            return url('storage/$this->image');
+            return url("storage/$this->image");
     }
 }
