@@ -35,6 +35,18 @@
                                         Editar
                                     </a>
                                 </td>
+                                <td>
+                                    <form action="{{ route('posts.destroy', $post) }} " method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input 
+                                            type="submit" 
+                                            value="Eliminar" 
+                                            class="btn btn-sm btn-danger"
+                                            onclick="return confirm('¿Quiere Borrar...?')"
+                                            >
+                                    </form>
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>
