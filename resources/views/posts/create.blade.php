@@ -17,14 +17,14 @@
                     <form 
                         action="{{ route('posts.store') }}"
                         method="POST"
-                        enctype="multipart/form-date"
+                        enctype="multipart/form-data"
                     >
                         <div class="form-group">
                             <label>Titulo *</label>
                             <input type="text" name="title" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Imagen</label>
+                            <label>Image</label>
                             <input type="file" name="file">
                         </div>
                         <div class="form-group">
