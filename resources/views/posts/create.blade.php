@@ -17,7 +17,7 @@
                     <form 
                         action="{{ route('posts.store') }}"
                         method="POST"
-                        enctype="multipart/form-data"
+                        enctype="multipart/form-date"
                     >
                         <div class="form-group">
                             <label>Titulo *</label>
